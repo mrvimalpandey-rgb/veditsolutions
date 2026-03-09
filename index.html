@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VedIT Solutions | Industrial IoT & Compliance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .hero-glow { position: absolute; top: -10%; right: -10%; width: 400px; height: 400px; background: rgba(56, 189, 248, 0.15); filter: blur(100px); border-radius: 50%; z-index: 0; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md text-white py-4 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter">VED IT <span class="text-sky-400">SOLUTIONS</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-sky-400 transition">Home</a>
+                <a href="#compliance" class="hover:text-sky-400 transition">Compliance</a>
+                <a href="#odams" class="hover:text-sky-400 transition">ODAMS</a>
+                <a href="#contact" class="bg-sky-500 px-4 py-2 rounded-md hover:bg-sky-600 transition">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative gradient-bg min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="hero-glow"></div>
+        <div class="container mx-auto px-6 relative z-10 text-white">
+            <div class="max-w-3xl">
+                <span class="text-sky-400 font-semibold tracking-widest uppercase text-sm">Industrial Intelligence</span>
+                <h1 class="text-5xl md:text-7xl font-bold mt-4 leading-tight">Bridging the Gap from <span class="text-sky-400">Edge to Cloud.</span></h1>
+                <p class="mt-6 text-xl text-slate-300 leading-relaxed">High-performance ODAMS frameworks for MPCB & CPCB compliance. We turn industrial telemetry into audit-ready assets for manufacturing leaders like <b>Soar Mlich</b>.</p>
+                <div class="mt-10 flex space-x-4">
+                    <a href="#odams" class="bg-sky-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-sky-600 transition shadow-lg shadow-sky-500/20">Explore Products</a>
+                    <a href="#compliance" class="border border-slate-700 px-8 py-4 rounded-lg font-bold hover:bg-slate-800 transition">Compliance Hub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="compliance" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold text-slate-900">Regulatory Compliance</h2>
+                <p class="mt-4 text-slate-600">Specialized data acquisition systems designed to meet stringent CPCB and State PCB guidelines.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition group">
+                    <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-sky-500 group-hover:text-white transition"><i class="fas fa-shield-halved"></i></div>
+                    <h3 class="text-xl font-bold mb-3">MPCB (Maharashtra)</h3>
+                    <p class="text-slate-600 text-sm">Full protocol integration for industries in the Maharashtra region. Real-time data pushing to MPCB servers with 100% uptime.</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition group">
+                    <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-sky-500 group-hover:text-white transition"><i class="fas fa-server"></i></div>
+                    <h3 class="text-xl font-bold mb-3">CPCB Guidelines</h3>
+                    <p class="text-slate-600 text-sm">Adhering to the 15-minute interval and 95% data availability mandate. Secure, tamper-proof digital logging.</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl hover:shadow-xl transition group">
+                    <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-sky-500 group-hover:text-white transition"><i class="fas fa-cloud-arrow-up"></i></div>
+                    <h3 class="text-xl font-bold mb-3">GPCB (Gujarat)</h3>
+                    <p class="text-slate-600 text-sm">Turnkey solutions for CEMS/EQMS data connectivity across Gujarat industrial belts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="odams" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-slate-900">ODAMS Framework</h2>
+                    <h4 class="text-sky-600 font-semibold mt-2">The Brain of Industrial Telemetry</h4>
+                    <p class="mt-6 text-slate-600 leading-relaxed">Our Online Data Acquisition & Management System (ODAMS) is a ready-to-deploy product that uses Python-driven logic on ruggedized Raspberry Pi hardware.</p>
+                    <ul class="mt-8 space-y-4">
+                        <li class="flex items-center text-slate-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Local Data Buffering during Internet Outages</li>
+                        <li class="flex items-center text-slate-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Direct Integration with Gas & Effluent Analyzers</li>
+                        <li class="flex items-center text-slate-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Cloud Sync to AWS & Oracle Cloud</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 bg-slate-900 p-8 rounded-3xl shadow-2xl">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <code class="text-sky-300 text-sm font-mono block">
+                        # ODAMS Data Push Logic<br>
+                        def sync_to_cloud(data):<br>
+                        &nbsp;&nbsp;try:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;response = cloud_api.push(data)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;logger.info("PCB Server Handshake: 200 OK")<br>
+                        &nbsp;&nbsp;except ConnectionError:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;buffer.save_locally(data)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;logger.warning("Local Buffer Active")
+                    </code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Ready for Compliance?</h2>
+            <p class="text-slate-600 mb-12 max-w-xl mx-auto">Get a technical audit for your CEMS/EQMS system today.</p>
+            <form class="max-w-lg mx-auto space-y-4">
+                <input type="text" placeholder="Full Name" class="w-full p-4 border rounded-lg focus:outline-sky-500">
+                <input type="email" placeholder="Business Email" class="w-full p-4 border rounded-lg focus:outline-sky-500">
+                <textarea placeholder="Your Requirement" class="w-full p-4 border rounded-lg h-32 focus:outline-sky-500"></textarea>
+                <button class="w-full bg-slate-900 text-white py-4 rounded-lg font-bold hover:bg-slate-800 transition">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-slate-900 text-slate-500 text-center border-t border-slate-800">
+        <p>&copy; 2026 VedIT Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
